@@ -6,12 +6,7 @@ let ba_block_height = document.querySelector(".ba-weather-list").offsetHeight;
 ba_shuffle.addEventListener('click', () => {
 	while (true) {
 		ba_items.forEach(item => {
-
-
 			item.style.order = getRandomInt(100);
-			console.log(item.style.order);
-
-
 		});
 		if (ba_block_height == document.querySelector(".ba-weather-list").offsetHeight) {
 			break;
