@@ -4,14 +4,19 @@ let ba_block_height = document.querySelector(".ba-weather-list").offsetHeight;
 
 
 ba_shuffle.addEventListener('click', () => {
-	ba_items.forEach(item => {
-		while (true) {
+	while (true) {
+		ba_items.forEach(item => {
+
+
 			item.style.order = getRandomInt(100);
-			if (ba_block_height == document.querySelector(".ba-weather-list").offsetHeight) {
-				break;
-			}
+			console.log(item.style.order);
+
+
+		});
+		if (ba_block_height == document.querySelector(".ba-weather-list").offsetHeight) {
+			break;
 		}
-	});
+	}
 });
 
 function getRandomInt(max) {
