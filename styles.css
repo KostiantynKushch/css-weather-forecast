@@ -135,3 +135,25 @@ body {
 .ba-pink {
   background: #cc6699;
 }
+
+/*--- btn styles ---*/
+.ba-additional {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.ba-additional:hover {
+  opacity: 0.5;
+}
+.ba-additional:active {
+  opacity: 1;
+}
+
+.ba-aside {
+  display: inline-block;
+  background: #fff;
+  margin-bottom: 10px;
+}
